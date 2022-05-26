@@ -22,7 +22,7 @@ class TokenManager:
 
     
     def get_auth(self, proof):
-        pass
+        return self.get_token(self.client_id, proof)
     
     def get_token(self, client_id, proof):
         try:
@@ -38,8 +38,11 @@ class TokenManager:
             
             with open(rsa_path, 'w') as f:
                 f.write(self._rsa)
+            
+            self._on_update({'Token': self._token, 'Key': self._rsa})
+            self.watch()
         except:
-            pass
+            raise ValueError('Unable to get Token')
 
     def load_token(self, client_id, proof):
         token_path = self._auth_dir + os.path.sep + 'token'
@@ -55,3 +58,6 @@ class TokenManager:
             rsa = open(rsa_path, 'r', encoding='utf8')
 
         valid = jwt.decode(token, rsa, algorithms=['RS256'])
+    
+    def watch(self): 
+        pass
