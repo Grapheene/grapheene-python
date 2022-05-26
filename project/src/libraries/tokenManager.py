@@ -51,7 +51,7 @@ class TokenManager:
         if os.access(token_path, os.F_OK):
             token = open(token_path, 'r', encoding='utf8')
         
-        if os.access(rs_path, os.F_OK):
+        if os.access(rsa_path, os.F_OK):
             rsa = open(rsa_path, 'r', encoding='utf8')
 
         valid = jwt.decode(token, rsa, algorithms=['RS256'])
