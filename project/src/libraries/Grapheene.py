@@ -39,4 +39,4 @@ class Grapheene:
             #TODO: start writing out Zokrates
 
         except: 
-            
+            pass
