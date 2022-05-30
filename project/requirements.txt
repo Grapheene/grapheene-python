@@ -1,3 +1,7 @@
 urllib3
 certifi
 pyjwt
+pyjwt[crypto]
+asyncio
+codecs
+SQLAlchemy
