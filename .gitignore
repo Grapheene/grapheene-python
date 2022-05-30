@@ -128,3 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 project/src/libraries/rest/test.py
+
+project/rsa
+project/token
