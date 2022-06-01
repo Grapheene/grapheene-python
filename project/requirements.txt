@@ -3,5 +3,4 @@ certifi
 pyjwt
 pyjwt[crypto]
 asyncio
-codecs
 SQLAlchemy
