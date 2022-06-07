@@ -16,7 +16,7 @@ class Key:
     def save(self, uuid, active, key_data):
         try:
             if active == 'True':
-                data = model.Key_Store(uuid=uuid, active=active, data=keyData)
+                data = model.Key_Store(uuid=uuid, active=active, data=key_data)
                 self.__db.create(data)
                 self.__db.commit() 
                 print('Successfully saved ${row.uuid} to the keyStore')
