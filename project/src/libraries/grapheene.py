@@ -34,7 +34,7 @@ class Grapheene:
         try:
             self.__ensure_dir_exits()
 
-            #TODO: setup prisma client
+            #TODO: setup orm session client
 
             #TODO: start writing out Zokrates
 

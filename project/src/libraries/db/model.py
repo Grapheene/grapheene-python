@@ -12,6 +12,9 @@ class Key_Store(Base):
 
     def __init__(self, uuid, active, data) -> None:
         super().__init__(self)
+        self.uuid = uuid
+        self.active = active
+        self.data = data
 
     def to_json(self):
         return dict(uuid=self.uuid, active=self.active, data=self.data)

@@ -131,3 +131,6 @@ project/src/libraries/rest/test.py
 
 project/rsa
 project/token
+
+project/db1
+project/env
