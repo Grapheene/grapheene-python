@@ -13,7 +13,7 @@ class Key:
             self.save(self.uuid, self.acitve, options.data)
 
     
-    def save(self, uuid, active, keyData):
+    def save(self, uuid, active, key_data):
         try:
             if active == 'True':
                 data = model.Key_Store(uuid=uuid, active=active, data=keyData)
