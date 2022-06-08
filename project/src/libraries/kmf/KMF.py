@@ -2,8 +2,7 @@ import keyring
 from .key_ring import Key_Ring
 
 class KMF:
-
-    def __init__(self, rest, db) -> None:
+    def __init__(self, rest, db):
         self.__rest = rest
         self.__db = db
         self.ring = Key_Ring(self.__rest, self.__db)

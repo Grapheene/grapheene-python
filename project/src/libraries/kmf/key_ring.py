@@ -1,4 +1,3 @@
-from unicodedata import name
 from .key_ring_data import Key_Ring_Data
 from .member import Member
 
@@ -127,7 +126,7 @@ class Key_Ring:
             else:
                 data.append(x)
         self.data = data
-        
+
     def enable_members_storage(self):
         if len(self.members) > 0:
             for member in self.members:

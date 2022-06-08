@@ -1,4 +1,3 @@
-
 class Key_Ring_Data:
     def __init__(self, options):
         self.uuid = options.uuid
