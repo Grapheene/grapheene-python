@@ -1,5 +1,5 @@
 import keyring
-from .keyring import Key_Ring
+from .key_ring import Key_Ring
 
 class KMF:
 
@@ -26,6 +26,6 @@ class KMF:
         self.__ring = key_ring
 
     def destroy(self):
-        res = self.__rest.delete('/kmf/ring/', self.uuid)
+        res = self.__rest.delete('/kmf/ring/', self.ring.uuid)
         self.ring = None
         return res
